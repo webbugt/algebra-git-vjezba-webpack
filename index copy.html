@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Example</title>
+    <script src="script.js" defer></script>
+    <style>
+      .wine-item {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Search Example</h1>
+    <form id="searchForm">
+      <select title="odaberi vrstu vina" name="wineType">
+        <!-- "reds", "whites", "sparkling", "rose", "desert", "port" -->
+        <option value="reds">Crvena</option>
+        <option value="whites">Bijela</option>
+        <option value="sparkling">Pjenušci</option>
+        <option value="rose">Rose</option>
+        <option value="port">Port</option>
+        <!-- <option value="white wines">Bijela Lazno</option> -->
+      </select>
+      <label for="limit">Limit</label>
+      <input type="number" name="limit" id="limit" value="10" />
+      <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+  </body>
+</html>
